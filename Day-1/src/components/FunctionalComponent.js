@@ -6,10 +6,50 @@ import React from "react";
 // }
 
 //ES6 Syntax
-//const Greet = () => <h1>Hello guys, I am es6 Syntax</h1>;
+// const Greet = (props) => {
+//   return (
+//     <div>
+//       <h1>
+//         Hello {props.name} a.k.a {props.stageName}
+//       </h1>
+//       {props.children}
+//     </div>
+//   );
+// };
 
-export const Greet = () => (
-  <h1>Hello guys, I am Functional Component with es6 Syntax</h1>
-); //Named Export
+//Destructuring Props using 1st way(Drstructuring in the parameter)-
 
-//export default Greet;
+// const Greet = (name, stageName) => {
+//   return (
+//     <div>
+//       <h1>
+//         Hello {name} a.k.a {stageName}
+//       </h1>
+//     </div>
+//   );
+// };
+
+//Destructuring Props using 2nd way(Drstructuring in the Function body)-
+
+const Greet = (props) => {
+  const { name, stageName } = props;
+  return (
+    <div>
+      <h1>
+        Hello {name} a.k.a {stageName}
+      </h1>
+    </div>
+  );
+};
+
+export default Greet;
+
+//Named Export
+
+/*
+
+ export const Greet = () => (
+   <h1>Hello guys, I am Functional Component with es6 Syntax</h1>
+ );
+ 
+ */
