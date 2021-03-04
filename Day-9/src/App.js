@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import HookRules from "./components/HookRules";
 import UseStateArray from "./components/UseStateArray";
+import UseStateObject from "./components/UseStateObject";
 
 function App() {
   {
@@ -37,8 +38,9 @@ function App() {
       <button className="btn" onDoubleClick onClick={changeName}>
         Click here
       </button> 
-      <HookRules />*/}
-      <UseStateArray />
+      <HookRules />
+      <UseStateArray />*/}
+      <UseStateObject />
     </div>
   );
 }
