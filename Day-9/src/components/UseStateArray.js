@@ -28,13 +28,23 @@ const UseStateArray = () => {
     setmyArray([]);
   };
 
+  const removeElement = (id) => {
+    const myNewArray = myArray.filter((person) => {
+      return person.id !== id;
+    });
+    setmyArray(myNewArray);
+  };
+
   return (
     <>
-      {myArray.map((person) => (
-        <h1 className="h1style" key={person.id}>
-          Name:{person.name} & Age:{person.age}
-        </h1>
-      ))}
+      {myArray.map((person) => {
+        return (
+          <h1 className="h1style" key={person.id}>
+            Name:{person.name} & Age:{person.age}
+            <button onClick={() => removeElement(person.id)}>remove</button>
+          </h1>
+        );
+      })}
       <button className="btn" onClick={clearArray}>
         clear
       </button>

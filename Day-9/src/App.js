@@ -39,8 +39,8 @@ function App() {
         Click here
       </button> 
       <HookRules />
-      <UseStateArray />*/}
-      <UseStateObject />
+      <UseStateObject />*/}
+      <UseStateArray />
     </div>
   );
 }
