@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import BasicForm from "./components/Forms/BasicForm";
 import HookRules from "./components/HookRules";
+import ShortCircuit from "./components/ShortCircuit";
 import UseStateArray from "./components/UseStateArray";
 import UseStateObject from "./components/UseStateObject";
 
@@ -39,8 +41,10 @@ function App() {
         Click here
       </button> 
       <HookRules />
-      <UseStateObject />*/}
+      <UseStateObject />
       <UseStateArray />
+      <ShortCircuit />*/}
+      <BasicForm />
     </div>
   );
 }
