@@ -3,6 +3,8 @@ import "./App.css";
 import BasicForm from "./components/Forms/BasicForm";
 import HookRules from "./components/HookRules";
 import ShortCircuit from "./components/ShortCircuit";
+import UseEffect1 from "./components/useEffectHooks/UseEffect1";
+import UseEffect2 from "./components/useEffectHooks/UseEffect2";
 import UseStateArray from "./components/UseStateArray";
 import UseStateObject from "./components/UseStateObject";
 
@@ -43,8 +45,10 @@ function App() {
       <HookRules />
       <UseStateObject />
       <UseStateArray />
-      <ShortCircuit />*/}
+      <ShortCircuit />]
       <BasicForm />
+      <UseEffect1 />*/}
+      <UseEffect2 />
     </div>
   );
 }
