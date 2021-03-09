@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
 import BasicForm from "./components/Forms/BasicForm";
+import UnControlled from "./components/Forms/UnControlled";
 import HookRules from "./components/HookRules";
 import ShortCircuit from "./components/ShortCircuit";
 import UseEffect1 from "./components/useEffectHooks/UseEffect1";
 import UseEffect2 from "./components/useEffectHooks/UseEffect2";
+import UseEffectAPI from "./components/useEffectHooks/UseEffectAPI";
 import UseStateArray from "./components/UseStateArray";
 import UseStateObject from "./components/UseStateObject";
 
@@ -47,8 +49,10 @@ function App() {
       <UseStateArray />
       <ShortCircuit />]
       <BasicForm />
-      <UseEffect1 />*/}
+      <UseEffect1 />
       <UseEffect2 />
+      <UseEffectAPI />*/}
+      <UnControlled />
     </div>
   );
 }

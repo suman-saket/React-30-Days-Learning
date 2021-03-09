@@ -14,6 +14,7 @@ const UseEffect2 = () => {
     window.addEventListener("resize", actualWidth);
 
     return () => {
+      //cleanp function
       console.log("remove event");
       window.removeEventListener("resize", actualWidth);
     };
