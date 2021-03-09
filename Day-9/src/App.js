@@ -7,6 +7,7 @@ import ShortCircuit from "./components/ShortCircuit";
 import UseEffect1 from "./components/useEffectHooks/UseEffect1";
 import UseEffect2 from "./components/useEffectHooks/UseEffect2";
 import UseEffectAPI from "./components/useEffectHooks/UseEffectAPI";
+import UseReducer from "./components/useReducer/useReducer";
 import UseStateArray from "./components/UseStateArray";
 import UseStateObject from "./components/UseStateObject";
 
@@ -51,8 +52,9 @@ function App() {
       <BasicForm />
       <UseEffect1 />
       <UseEffect2 />
-      <UseEffectAPI />*/}
-      <UnControlled />
+      <UseEffectAPI />
+      <UnControlled />*/}
+      <UseReducer />
     </div>
   );
 }
