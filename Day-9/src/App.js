@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
+import Test from "./components/customHooks/Test";
 import BasicForm from "./components/Forms/BasicForm";
 import UnControlled from "./components/Forms/UnControlled";
 import HookRules from "./components/HookRules";
 import ShortCircuit from "./components/ShortCircuit";
+import CompA from "./components/useContext/CompA";
 import UseEffect1 from "./components/useEffectHooks/UseEffect1";
 import UseEffect2 from "./components/useEffectHooks/UseEffect2";
 import UseEffectAPI from "./components/useEffectHooks/UseEffectAPI";
@@ -53,8 +55,10 @@ function App() {
       <UseEffect1 />
       <UseEffect2 />
       <UseEffectAPI />
-      <UnControlled />*/}
+      <UnControlled />
       <UseReducer />
+      <CompA />*/}
+      <Test />
     </div>
   );
 }
