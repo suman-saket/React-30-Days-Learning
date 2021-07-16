@@ -13,14 +13,18 @@ function HookMouse() {
   };
 
   useEffect(() => {
-    console.log("useFffect called");
+    console.log("useEffect called");
     window.addEventListener("mousemove", logMousePosition);
 
+    //The function that is passed to useEffect can return a function which will be executed when component will unMount.
+    //So from the above arrow function passed to useEffect, we return cleanup Function.
     return () => {
+      //When you want to execute some component cleanup code,you include it in function and return that function from the function passed to useEffect.cleanUp code can be cancelling subscription,timers or removing Event Listeners
+      //here,we are mimicking componentwillUnmount with useEffect.
       console.log("Component unmounting code");
       window.removeEventListener("mousemove", logMousePosition);
     };
-  }, []); // this Dependency array(an empty array) will call only once after initial render. Here, we are telling React that this effect does not depend on any state or props.So there is no need to call this effect after every render.
+  }, []); // This Dependency array(an empty array) will call only once after initial render. Here, we are telling React that this effect does not depend on any state or props.So there is no need to call this effect after every render.
   //we can mimic componentDidMount wit useEffect Hook by simpy passing an empty array.
 
   return (
